@@ -23,10 +23,6 @@ A full-featured task management system enabling users to create, organize, and t
   - Add comments to tasks
   - Retrieve, update, and delete comments
 
-- **File Operations**
-  - Upload multiple files per task with validation
-  - Download and delete files
-
 - **Analytics**
   - Task overview statistics (counts by status, priority)
   - User performance metrics
@@ -43,33 +39,20 @@ A full-featured task management system enabling users to create, organize, and t
 - User profile management
 - Analytics and reports with charts and trends
 - Responsive design with dark mode support
-- File upload with drag-and-drop functionality
 - Confirmation dialogs, loading, error, and empty states
-- Custom styled UI built with React, TypeScript, and hooks
+- Custom styled UI built with React and hooks
 - Client-side routing and state management without CSS frameworks
 - Performance optimized for seamless user experience
-
-### Bonus Features
-
-- Real-time updates through WebSockets
-- Email notifications for updates and assignments
-- Background job processing for long-running tasks
-- Caching layer for optimized API performance
-- Markdown support in comments
-- Comprehensive testing suite
-- Docker-based development and deployment setup
 
 ---
 
 ## Technical Stack
 
 - **Backend:** Node.js, Express.js, MongoDB (Mongoose), JWT Authentication
-- **Frontend:** React.js with Hooks, TypeScript, React Router
-- **File Storage:** Local file system / Cloud storage (e.g. AWS S3 - optional)
-- **Real-time:** Socket.IO (WebSockets)
-- **Analytics & Visualization:** Chart.js / D3.js or similar
-- **API Documentation:** Swagger / Postman
-- **Security:** CORS, rate limiting, input sanitization, validation with Joi or Yup
+- **Frontend:** React.js with Hooks, React Router
+- **Analytics & Visualization:** Chart.js
+- **API Documentation:** Postman
+- **Security:** CORS, rate limiting
 
 ---
 
@@ -77,5 +60,29 @@ A full-featured task management system enabling users to create, organize, and t
 
 ### Backend
 
-1. Clone the repository
-2. Install dependencies:
+## API Endpoints Overview
+
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - Login user
+- `GET /api/auth/me` - Get current user profile
+
+- `POST /api/tasks` - Create new task
+- `GET /api/tasks` - Get tasks list (filter, sort, paginate)
+- `GET /api/tasks/:id` - Get task by ID
+- `PUT /api/tasks/:id` - Update task
+- `DELETE /api/tasks/:id` - Soft delete task
+- `POST /api/tasks/bulk` - Bulk create tasks
+
+- `POST /api/tasks/:taskId/comments` - Add comment
+- `GET /api/tasks/:taskId/comments` - Get comments for task
+- `PUT /api/comments/:id` - Update comment
+- `DELETE /api/comments/:id` - Delete comment
+
+- `POST /api/tasks/:taskId/files` - Upload files
+- `GET /api/files/:fileId` - Download file
+- `DELETE /api/files/:fileId` - Delete file
+
+- `GET /api/analytics/overview` - Task overview stats
+- `GET /api/analytics/performance` - User performance metrics
+- `GET /api/analytics/trends` - Task trends over time
+- `GET /api/analytics/export` - Export task data
