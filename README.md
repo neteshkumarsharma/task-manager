@@ -4,6 +4,8 @@ A full-featured task management system enabling users to create, organize, and t
 
 ---
 
+![image alt](https://github.com/neteshkumarsharma/task-manager/blob/479dab1a455466ad1808ef5723a2f372f029a8db/Screenshot%20(11).png)
+
 ## Features
 
 ### Backend APIs
