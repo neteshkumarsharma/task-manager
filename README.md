@@ -4,10 +4,10 @@ A full-featured task management system enabling users to create, organize, and t
 
 ---
 
-<img src="https://github.com/neteshkumarsharma/task-manager/blob/479dab1a455466ad1808ef5723a2f372f029a8db/Screenshot%20(11).png" width="300" />
-<img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(12).png" width="300" />
-<img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(13).png" width="300" />
-<img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(14).png" width="300" />
+<img src="https://github.com/neteshkumarsharma/task-manager/blob/479dab1a455466ad1808ef5723a2f372f029a8db/Screenshot%20(11).png" width="300" />  <img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(13).png" width="300" />
+<img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(12).png" width="300" />  <img src="https://github.com/neteshkumarsharma/task-manager/blob/7ec2a89f501da9660a3a56f814520acad72782cc/Screenshot%20(14).png" width="300" />
+
+
 
 
 ## Features
