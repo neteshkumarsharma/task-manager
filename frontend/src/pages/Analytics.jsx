@@ -42,10 +42,10 @@ export default function Analytics() {
             <div className="card">
               <h3>Raw data (sample)</h3>
               <div className="small">
-                Showing up to {Math.min(tasks.length, 20)} tasks (most recent from API response).
+                Showing up to {Math.min(4, tasks.length)} tasks (most recent from API response).
               </div>
               <div style={{ marginTop: 8 }}>
-                {tasks.slice(0, 20).map((t) => (
+                {tasks.slice(0, 4).map((t) => (
                   <div key={t.id} className="task-row">
                     <div>
                       <strong>{t.title}</strong>

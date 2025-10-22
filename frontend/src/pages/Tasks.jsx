@@ -68,7 +68,8 @@ export default function Tasks() {
           <select name="status" className="input" style={{ maxWidth: 160 }}>
             <option value="">All statuses</option>
             <option value="PENDING">PENDING</option>
-            <option value="COMPLETED">COMPLETED</option>
+            <option value="COMPLETED">COMPLETED</option>  
+            <option value="DEFERRED">DEFERRED</option>
           </select>
           <button className="btn" type="submit">Apply</button>
         </form>

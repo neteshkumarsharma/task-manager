@@ -7,7 +7,8 @@ export default function Dashboard() {
   const [stats, setStats] = useState({
     total: 0,
     completed: 0,
-    pending: 0
+    pending: 0,
+    deferred: 0,
   });
   const [recent, setRecent] = useState([]);
 
@@ -18,7 +19,8 @@ export default function Dashboard() {
       const total = res.data.totalTasks || tasks.length;
       const completed = tasks.filter(t => t.status === 'COMPLETED').length;
       const pending = tasks.filter(t => t.status === 'PENDING').length;
-      setStats({ total, completed, pending });
+      const deferred = tasks.filter(t => t.status === 'DEFERRED').length;
+      setStats({ total, completed, pending, deferred });
       setRecent(tasks.slice(0, 6));
     } catch (err) {
       console.error(err);
@@ -44,6 +46,10 @@ export default function Dashboard() {
         <div className="card">
           <h3>Pending</h3>
           <div style={{ fontSize: 28, color: 'orange' }}>{stats.pending}</div>
+        </div>
+        <div className="card">
+          <h3>Deferred</h3>
+          <div style={{ fontSize: 28, color: 'yellow' }}>{stats.deferred}</div>
         </div>
       </div>
 
