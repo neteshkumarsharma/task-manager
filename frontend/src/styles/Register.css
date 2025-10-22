@@ -1,0 +1,6 @@
+@import './Login.css';
+
+.register-note { 
+    font-size: 13px; 
+    color: var(--muted-text); 
+    margin-bottom: 8px; }

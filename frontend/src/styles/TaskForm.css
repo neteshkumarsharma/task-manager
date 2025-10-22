@@ -1,0 +1,23 @@
+.form-wrap { 
+  max-width: 860px;
+  margin: 0 auto; 
+}
+.form-row { 
+  display:flex; 
+  gap:12px; 
+  flex-direction:column; 
+}
+.form-actions { 
+  display:flex; 
+  gap:10px; 
+  align-items:center; 
+  margin-top:8px; 
+}
+
+@media (min-width: 800px) {
+  .form-row.cols-2 { 
+    display:grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap:12px; 
+  }
+}

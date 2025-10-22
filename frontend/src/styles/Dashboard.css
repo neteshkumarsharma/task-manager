@@ -1,0 +1,95 @@
+.dashboard-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.stats {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.stat {
+  padding: 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--primary-600), var(--primary));
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(88, 24, 163, 0.12);
+}
+
+.stat h3 {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.stat .value {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 8px;
+  color: #fff;
+}
+
+.recent-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.recent-item .title {
+  font-weight: 700;
+  color: var(--purple-900);
+}
+
+.recent-item .meta {
+  font-size: 13px;
+  color: var(--muted-text);
+  text-align: right;
+}
+
+.dashboard-widget {
+  background: linear-gradient(180deg, rgba(245, 241, 255, 0.6), rgba(255, 255, 255, 0));
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+  }
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  color: var(--purple-800);
+}

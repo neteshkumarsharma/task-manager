@@ -1,0 +1,104 @@
+/* Define color variables for light mode */
+:root {
+  --card-bg: #fff;
+  --border: #e6e6e9;
+  --text: #111827;
+  --muted-text: #6b7280;
+  --primary: #7c3aed;
+  --background: #fafafa;
+}
+
+/* Dark mode colors */
+.dark-mode {
+  --card-bg: #1e1e2f;
+  --border: #37374a;
+  --text: #e0e0ff;
+  --muted-text: #a8a8c0;
+  --primary: #c4a7e7;
+  --background: #12121f;
+}
+
+/* Apply background to body */
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Your existing styles, updated to use variables */
+.profile-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.1);
+  color: var(--text);
+}
+
+.avatar,
+.avatar-wrapper {
+  background: var(--background);
+  color: var(--primary);
+  border: 2px solid var(--border);
+}
+
+.avatar-fallback {
+  background: linear-gradient(180deg, var(--primary) 0%, #5b21b6 100%);
+  color: #fff;
+  border: 2px solid var(--border);
+}
+
+.profile-name {
+  color: var(--text);
+}
+
+.profile-handle,
+.label,
+.profile-footer,
+.muted,
+.small {
+  color: var(--muted-text);
+}
+
+.profile-item {
+  background: linear-gradient(180deg, rgba(250,250,255,0.05), rgba(250,250,255,0.003));
+  border-radius: 8px;
+  padding: 8px;
+  color: var(--text);
+}
+
+/* Bio adjustments */
+.bio {
+  color: var(--text);
+}
+
+/* Adjust shadows for dark mode */
+.dark-mode .profile-card {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive and other styles remain unchanged */
+@media (min-width: 800px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .avatar,
+  .avatar-img,
+  .avatar-wrapper,
+  .avatar-fallback {
+    width: 72px;
+    height: 72px;
+    flex: 0 0 72px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .profile-card {
+    max-width: 960px;
+  }
+}

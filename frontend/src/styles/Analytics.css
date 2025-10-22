@@ -1,0 +1,29 @@
+.analytics-grid {
+   display:grid; 
+   gap:12px; 
+   grid-template-columns: 1fr; 
+  }
+.chart-card { 
+  padding:12px; 
+  display:flex; 
+  flex-direction:column; 
+  gap:10px; 
+  align-items:stretch; 
+}
+.metric-row { 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  padding:8px 0; 
+  border-bottom:1px dashed #eef2f7; 
+}
+
+@media (min-width: 700px) {
+  .analytics-grid { grid-template-columns: 1fr 1fr; }
+}
+.card > canvas {
+  max-width: 100%;
+}
+@media (min-width: 600px) {
+  .grid.cols-2 { grid-template-columns: 1fr 420px; }
+}
