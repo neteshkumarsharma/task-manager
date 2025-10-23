@@ -14,6 +14,9 @@ A full-featured task management system enabling users to create, organize, and t
 
 ### Backend APIs
 
+- **API Doc Link**
+  -https://app.swaggerhub.com/apis-docs/student-2b2/task-manager/1.0.0
+
 - **Authentication**
   - Register new users
   - User login
